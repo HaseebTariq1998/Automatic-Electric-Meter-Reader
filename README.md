@@ -55,7 +55,7 @@ Following area extraction, the next step involves enhancing number visibility. F
 ### CNN model training
 The dataset, consisting of 1433 images, undergoes resizing to 50x50 grayscale, prioritizing measures against overfitting. Splitting into 90% training and 10% testing, with 10% for validation, ensures robust model evaluation.
 
-The convolutional network, inspired by LeNet-1, features two sets of layers. The first set comprises a 32-filter convolutional layer with a 3x3 kernel, followed by a ReLU activation. Subsequent max-pooling uses a 2x2 size and a stride of 1. The second set mirrors the first.
+The convolutional network, inspired by LeNet-1, features two sets of layers. The first set comprises a 32-filter convolutional layer with a 3x3 kernel, followed by a ReLU activation. Subsequent max-pooling uses a 2x2 size and a stride of 1. The second set mirrors the first.At end a dense layer of 128 units was added form which 0.5 was dropped and relu activation was used followed by dense layer of 11 units with softmax activation function.
 
 Initial training for 1000 epochs shows overfitting, prompting a 600-epoch retrain for 96% training and 92% validation accuracy. Attempts to enhance complexity with an additional convolutional layer lead to overfitting. The decision to retain the two-layer model yields the highest validation accuracy at 92%, with testing confirming 90% accuracy.
 <br><br><br>
