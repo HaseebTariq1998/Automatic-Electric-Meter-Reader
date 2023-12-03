@@ -8,7 +8,7 @@ While Optical Character Recognition (OCR) tools like Google Tesseract excel at r
 
 In essence, the project involves uploading a video of meter readings, applying preprocessing techniques, and utilizing our trained CNN model to recognize electricity usage. Simultaneously, the meter number is identified using Google Tesseract. The results are then presented to the user and stored in a database, streamlining the meter reading process. Further details on these processes are outlined in the methodology section
 
-
+[for complete detail see report.pdf](report.pdf)
 
 ## Methodology
 
